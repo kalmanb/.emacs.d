@@ -1,0 +1,18 @@
+[submodule "lisp/emacs-noflet"]
+	path = lisp/emacs-noflet
+	url = git@github.com:nicferrier/emacs-noflet.git
+[submodule "lisp/use-package"]
+	path = lisp/use-package
+	url = git@github.com:jwiegley/use-package.git
+[submodule "lisp/s"]
+	path = lisp/s
+	url = git@github.com:magnars/s.el.git
+[submodule "lisp/dash"]
+	path = lisp/dash
+	url = git@github.com:magnars/dash.el.git
+[submodule "lisp/f"]
+	path = lisp/f
+	url = git@github.com:rejeep/f.el.git
+[submodule "lisp/magit"]
+	path = lisp/magit
+	url = git@github.com:magit/magit.git

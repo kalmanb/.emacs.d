@@ -1,0 +1,4 @@
+# key: pp
+# name: fmt.Println
+# --
+fmt.Println(${1:"${2:content}"})$0

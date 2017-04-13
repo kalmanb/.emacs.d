@@ -1,0 +1,5 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: case class
+# key: cc
+# --
+case class ${1:Name}(${2:params...})

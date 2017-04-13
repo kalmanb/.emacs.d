@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: import abc from 'abc';
+# key: imm
+# --
+import ${1:name} from '${2:import}'$0;

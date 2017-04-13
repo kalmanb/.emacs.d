@@ -1,0 +1,4 @@
+# key: ae
+# name: assert equal
+# --
+assert.Equal(t, ${1:expected}, ${2:actual})$0

@@ -1,0 +1,12 @@
+# Compiled
+*.elc
+
+# Packaging
+.cask
+
+# Internal
+elpa
+.cache
+/projectile-bookmarks.eld
+
+cb-config
