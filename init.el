@@ -80,9 +80,9 @@ If argument INTERACTIVE-P is set, log additional information."
 ;; Load features
 (use-package x-emacs)
 (use-package x-basic-settings)
+(use-package x-leader-keys)
 ;; (use-package x-faces)
 ;; (use-package x-modeline)
-;; (use-package x-leader-keys)
 ;; (use-package x-evil)
 ;; (use-package x-ivy)
 ;; (use-package x-ag)

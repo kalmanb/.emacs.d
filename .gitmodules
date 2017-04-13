@@ -16,3 +16,6 @@
 [submodule "lisp/magit"]
 	path = lisp/magit
 	url = git@github.com:magit/magit.git
+[submodule "lisp/emacs-bind-map"]
+	path = lisp/emacs-bind-map
+	url = git@github.com:justbur/emacs-bind-map.git
