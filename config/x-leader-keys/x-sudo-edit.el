@@ -1,4 +1,4 @@
-;;; cb-sudo-edit.el --- Command for editing the current file as sudo.  -*- lexical-binding: t; -*-
+;;; x-sudo-edit.el --- Command for editing the current file as sudo.  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Chris Barrett
 
@@ -8,7 +8,7 @@
 
 ;;; Code:
 
-(defun cb/sudo-edit (&optional arg)
+(defun x/sudo-edit (&optional arg)
   "Reopen the current file as sudo for editing.
 
 With prefix argument ARG, prompt for a file."
@@ -31,6 +31,6 @@ With prefix argument ARG, prompt for a file."
                        (t (concat "/sudo:root@localhost:" fname)))))
     (find-file target)))
 
-(provide 'cb-sudo-edit)
+(provide 'x-sudo-edit)
 
-;;; cb-sudo-edit.el ends here
+;;; x-sudo-edit.el ends here

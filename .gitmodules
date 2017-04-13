@@ -19,3 +19,42 @@
 [submodule "lisp/emacs-bind-map"]
 	path = lisp/emacs-bind-map
 	url = git@github.com:justbur/emacs-bind-map.git
+[submodule "lisp/evil-nerd-commenter"]
+	path = lisp/evil-nerd-commenter
+	url = git@github.com:redguardtoo/evil-nerd-commenter.git
+[submodule "lisp/evil"]
+	path = lisp/evil
+	url = git@github.com:emacs-evil/evil.git
+[submodule "lisp/vi-tilde-fringe"]
+	path = lisp/vi-tilde-fringe
+	url = git@github.com:syl20bnr/vi-tilde-fringe.git
+[submodule "lisp/evil-numbers"]
+	path = lisp/evil-numbers
+	url = git@github.com:cofi/evil-numbers.git
+[submodule "lisp/evil-matchit"]
+	path = lisp/evil-matchit
+	url = git@github.com:redguardtoo/evil-matchit.git
+[submodule "lisp/evil-search-highlight-persist"]
+	path = lisp/evil-search-highlight-persist
+	url = git@github.com:juanjux/evil-search-highlight-persist.git
+[submodule "lisp/projectile"]
+	path = lisp/projectile
+	url = git@github.com:bbatsov/projectile.git
+[submodule "lisp/evil-terminal-cursor-changer"]
+	path = lisp/evil-terminal-cursor-changer
+	url = git@github.com:7696122/evil-terminal-cursor-changer.git
+[submodule "lisp/evil-surround"]
+	path = lisp/evil-surround
+	url = git@github.com:timcharper/evil-surround.git
+[submodule "lisp/evil-iedit-state"]
+	path = lisp/evil-iedit-state
+	url = git@github.com:syl20bnr/evil-iedit-state.git
+[submodule "lisp/evil-magit"]
+	path = lisp/evil-magit
+	url = git@github.com:emacs-evil/evil-magit.git
+[submodule "lisp/evil-args"]
+	path = lisp/evil-args
+	url = git@github.com:wcsmith/evil-args.git
+[submodule "lisp/evil-ediff"]
+	path = lisp/evil-ediff
+	url = git@github.com:emacs-evil/evil-ediff.git

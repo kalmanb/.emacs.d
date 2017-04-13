@@ -1,4 +1,4 @@
-;;; cb-rename-file-and-buffer.el --- Command for renaming the file for the current buffer.  -*- lexical-binding: t; -*-
+;;; x-rename-file-and-buffer.el --- Command for renaming the file for the current buffer.  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Chris Barrett
 
@@ -30,13 +30,13 @@
 (autoload 'projectile-project-p "projectile")
 (autoload 'recentf-cleanup "recentf")
 
-(defun cb-rename-file-and-buffer--assert-file-exists-for-buffer (&optional buf)
+(defun x-rename-file-and-buffer--assert-file-exists-for-buffer (&optional buf)
   (let ((cur (buffer-file-name buf)))
     (if (not (and cur (f-exists? cur)))
         (error "Buffer is not visiting a file!")
       cur)))
 
-(defun cb-rename-file-and-buffer--try-move-file-with-vc (src dest)
+(defun x-rename-file-and-buffer--try-move-file-with-vc (src dest)
   (condition-case err
       (when (vc-backend src)
         (vc-rename-file src dest)
@@ -51,7 +51,7 @@
         (t
          (error msg)))))))
 
-(defun cb-rename-file-and-buffer--try-rename-file (src dest)
+(defun x-rename-file-and-buffer--try-rename-file (src dest)
   (when (and (f-exists? dest) (not (y-or-n-p "File exists.  Overwrite? ")))
     (user-error "Aborted"))
   (rename-file src dest t)
@@ -66,7 +66,7 @@
       (projectile-invalidate-cache nil))))
 
 ;;;###autoload
-(defun cb/rename-file-and-buffer (buffer dest-dir dest-filename)
+(defun x/rename-file-and-buffer (buffer dest-dir dest-filename)
   "Rename the current buffer and file it is visiting.
 Performs basic VC cleanup.
 
@@ -75,25 +75,25 @@ BUFFER is the buffer to rename.
 DEST-DIR is the directory to move the underlying file to.
 
 DEST-FILENAME is the new filename for the underlying file."
-  (interactive (let ((cur (cb-rename-file-and-buffer--assert-file-exists-for-buffer)))
+  (interactive (let ((cur (x-rename-file-and-buffer--assert-file-exists-for-buffer)))
                  (list (current-buffer)
                        (read-directory-name "Move to directory: " (f-dirname cur))
                        (read-string "New name: " (f-filename cur)))))
-  (let ((src (cb-rename-file-and-buffer--assert-file-exists-for-buffer buffer))
+  (let ((src (x-rename-file-and-buffer--assert-file-exists-for-buffer buffer))
         (dest-path (f-join dest-dir dest-filename)))
-    (or (cb-rename-file-and-buffer--try-move-file-with-vc src dest-path)
-        (cb-rename-file-and-buffer--try-rename-file src dest-path))
+    (or (x-rename-file-and-buffer--try-move-file-with-vc src dest-path)
+        (x-rename-file-and-buffer--try-rename-file src dest-path))
     (when (and (fboundp 'projectile-project-p) (projectile-project-p))
       (call-interactively #'projectile-invalidate-cache))
     (message "File '%s' moved to '%s'" (f-short (f-filename src)) (f-short dest-path))))
 
 ;;;###autoload
-(defun cb-rename-file-and-buffer-mv (buffer to-dir)
+(defun x-rename-file-and-buffer-mv (buffer to-dir)
   "Move BUFFER's corresponding file to TO-DIR."
   (interactive (list (current-buffer) (read-directory-name "Move to: ")))
-  (let ((current-file-name (f-filename (cb-rename-file-and-buffer--assert-file-exists-for-buffer buffer))))
-    (cb/rename-file-and-buffer buffer to-dir current-file-name)))
+  (let ((current-file-name (f-filename (x-rename-file-and-buffer--assert-file-exists-for-buffer buffer))))
+    (x/rename-file-and-buffer buffer to-dir current-file-name)))
 
-(provide 'cb-rename-file-and-buffer)
+(provide 'x-rename-file-and-buffer)
 
-;;; cb-rename-file-and-buffer.el ends here
+;;; x-rename-file-and-buffer.el ends here

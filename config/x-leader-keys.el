@@ -15,18 +15,18 @@
 (require 'subr-x)
 
 (autoload 'evil-window-rotate-downwards "evil-commands")
-(autoload 'cb/alternate-buffer "x-alternate-buffer")
-(autoload 'cb/copy-buffer-path "x-copy-buffer-path")
-(autoload 'cb/rename-file-and-buffer "x-rename-file-and-buffer")
-(autoload 'cb/sudo-edit "x-sudo-edit")
-(autoload 'cb/toggle-window-split "x-toggle-window-split")
+(autoload 'x/alternate-buffer "x-alternate-buffer")
+(autoload 'x/copy-buffer-path "x-copy-buffer-path")
+(autoload 'x/rename-file-and-buffer "x-rename-file-and-buffer")
+(autoload 'x/sudo-edit "x-sudo-edit")
+(autoload 'x/toggle-window-split "x-toggle-window-split")
 (autoload 'x-goto-init-file "x-goto")
 (autoload 'x-goto-messages "x-goto")
 (autoload 'x-goto-personal-config "x-goto")
 (autoload 'org-narrow-to-subtree "org")
 
 (use-package x-delete-current-buffer-and-file
-  :commands (cb/delete-current-buffer-and-file)
+  :commands (x/delete-current-buffer-and-file)
   :preface
   (progn
     (autoload 'projectile-invalidate-cache "projectile")
@@ -58,7 +58,7 @@
     ;; Rename functions shown by which-key for legibility.
 
     (add-to-list 'which-key-description-replacement-alist
-                 (cons (rx bos "cb" (* (not (any "/"))) "/" (group (+ nonl)) eos) "\\1"))
+                 (cons (rx bos "x" (* (not (any "/"))) "/" (group (+ nonl)) eos) "\\1"))
 
     (which-key-add-key-based-replacements
       "SPC ,"   "smartparens"
@@ -102,8 +102,8 @@
     (spacemacs-keys-set-leader-keys
       "u"   #'universal-argument
       "SPC" #'execute-extended-command
-      "TAB" #'cb/alternate-buffer
-      "|"   #'cb/toggle-window-split
+      "TAB" #'x/alternate-buffer
+      "|"   #'x/toggle-window-split
 
       "!"   #'shell-command
 
@@ -115,16 +115,16 @@
 
       "c r" #'comment-or-uncomment-region
 
-      "f D" #'cb/delete-current-buffer-and-file
+      "f D" #'x/delete-current-buffer-and-file
       "f F" #'find-file-other-window
-      "f R" #'cb/rename-file-and-buffer
-      "f e" #'cb/sudo-edit
+      "f R" #'x/rename-file-and-buffer
+      "f e" #'x/sudo-edit
       "f f" #'find-file
       "f s" #'save-buffer
       "f S" #'save-some-buffers
       "f W" #'write-file
       "f v" #'x-leader-keys/reload-file
-      "f y" #'cb/copy-buffer-path
+      "f y" #'x/copy-buffer-path
 
       "g i" #'x-goto-init-file
       "g m" #'x-goto-messages

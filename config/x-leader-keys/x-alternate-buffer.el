@@ -1,4 +1,4 @@
-;;; cb-alternate-buffer.el --- Command for toggling between buffers.  -*- lexical-binding: t; -*-
+;;; x-alternate-buffer.el --- Command for toggling between buffers.  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Chris Barrett
 
@@ -10,7 +10,7 @@
 
 (require 'seq)
 
-(defun cb/alternate-buffer (&optional window)
+(defun x/alternate-buffer (&optional window)
   "Toggle back and forth between two buffers.
 
 WINDOW sets the window in which to toggle, and defaults to the
@@ -29,6 +29,6 @@ current window."
          (other-buffer current-buffer t)))))
 
 
-(provide 'cb-alternate-buffer)
+(provide 'x-alternate-buffer)
 
-;;; cb-alternate-buffer.el ends here
+;;; x-alternate-buffer.el ends here

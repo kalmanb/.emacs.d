@@ -1,4 +1,4 @@
-;;; cb-toggle-window-split.el --- Command to toggle window split.  -*- lexical-binding: t; -*-
+;;; x-toggle-window-split.el --- Command to toggle window split.  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Chris Barrett
 
@@ -8,7 +8,7 @@
 
 ;;; Code:
 
-(defun cb/toggle-window-split ()
+(defun x/toggle-window-split ()
   "Toggle between vertical and horizontal split."
   (interactive)
   (cond
@@ -38,6 +38,6 @@
         (select-window w1)
         (when w2 (other-window 1)))))))
 
-(provide 'cb-toggle-window-split)
+(provide 'x-toggle-window-split)
 
-;;; cb-toggle-window-split.el ends here
+;;; x-toggle-window-split.el ends here

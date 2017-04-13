@@ -1,4 +1,4 @@
-;;; cb-copy-buffer-path.el --- Copy the path to the visited file.  -*- lexical-binding: t; -*-
+;;; x-copy-buffer-path.el --- Copy the path to the visited file.  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Chris Barrett
 
@@ -10,7 +10,7 @@
 
 (require 'subr-x)
 
-(defun cb/copy-buffer-path ()
+(defun x/copy-buffer-path ()
   "Show and copy the full path to the current file in the minibuffer."
   (interactive)
   ;; list-buffers-directory is the variable set in dired buffers
@@ -19,6 +19,6 @@
     (error "Buffer not visiting a file")))
 
 
-(provide 'cb-copy-buffer-path)
+(provide 'x-copy-buffer-path)
 
-;;; cb-copy-buffer-path.el ends here
+;;; x-copy-buffer-path.el ends here

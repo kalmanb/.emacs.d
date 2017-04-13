@@ -1,4 +1,4 @@
-;;; cb-goto.el --- Shortcut commands to go to particular locations.  -*- lexical-binding: t; -*-
+;;; x-goto.el --- Shortcut commands to go to particular locations.  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Chris Barrett
 
@@ -8,21 +8,21 @@
 
 ;;; Code:
 
-(defun cb-goto-init-file ()
+(defun x-goto-init-file ()
   "Open the Emacs init.el file."
   (interactive)
   (find-file (concat user-emacs-directory "init.el")))
 
-(defun cb-goto-personal-config ()
+(defun x-goto-personal-config ()
   "Open the personal configuration file."
   (interactive)
   (find-file "~/Sync/emacs/personal-config.el"))
 
-(defun cb-goto-messages ()
+(defun x-goto-messages ()
   "Open the messages buffer."
   (interactive)
   (display-buffer "*Messages*"))
 
-(provide 'cb-goto)
+(provide 'x-goto)
 
-;;; cb-goto.el ends here
+;;; x-goto.el ends here

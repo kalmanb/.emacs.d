@@ -1,4 +1,4 @@
-;;; cb-buffer-transient-state.el --- Buffer navigation transient state.  -*- lexical-binding: t; -*-
+;;; x-buffer-transient-state.el --- Buffer navigation transient state.  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Chris Barrett
 
@@ -10,7 +10,7 @@
 
 (require 'evil-transient-state)
 
-(evil-transient-state-define cb-buffer
+(evil-transient-state-define x-buffer
   :title "Buffer Selection Transient State"
   :bindings
   ("n" next-buffer "next")
@@ -19,6 +19,6 @@
   ("k" kill-this-buffer "kill")
   ("q" nil "quit" :exit t))
 
-(provide 'cb-buffer-transient-state)
+(provide 'x-buffer-transient-state)
 
-;;; cb-buffer-transient-state.el ends here
+;;; x-buffer-transient-state.el ends here

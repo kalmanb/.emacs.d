@@ -1,4 +1,4 @@
-;;; cb-scale-font-transient-state.el --- Microstate for zooming text scale.  -*- lexical-binding: t; -*-
+;;; x-scale-font-transient-state.el --- Microstate for zooming text scale.  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Chris Barrett
 
@@ -10,7 +10,7 @@
 
 (require 'evil-transient-state)
 
-(defun cb-scale-font-transient-state-scale-font-size-up-or-down (direction)
+(defun x-scale-font-transient-state-scale-font-size-up-or-down (direction)
   "Scale the font.
 
 If DIRECTION is positive or zero the font is scaled up, otherwise
@@ -23,32 +23,32 @@ it is scaled down."
           (text-scale-decrease scale)
         (text-scale-increase scale)))))
 
-(defun cb-scale-font-transient-state-scale-up-font ()
+(defun x-scale-font-transient-state-scale-up-font ()
   "Scale up the font."
   (interactive)
-  (cb-scale-font-transient-state-scale-font-size-up-or-down 1))
+  (x-scale-font-transient-state-scale-font-size-up-or-down 1))
 
-(defun cb-scale-font-transient-state-scale-down-font ()
+(defun x-scale-font-transient-state-scale-down-font ()
   "Scale up the font."
   (interactive)
-  (cb-scale-font-transient-state-scale-font-size-up-or-down -1))
+  (x-scale-font-transient-state-scale-font-size-up-or-down -1))
 
-(defun cb-scale-font-transient-state-reset-font-size ()
+(defun x-scale-font-transient-state-reset-font-size ()
   "Reset the font size."
   (interactive)
-  (cb-scale-font-transient-state-scale-font-size-up-or-down 0))
+  (x-scale-font-transient-state-scale-font-size-up-or-down 0))
 
-(evil-transient-state-define cb-scale-font
+(evil-transient-state-define x-scale-font
   :title "Font Scaling Transient State"
   :doc "\n[_+_/_=_] scale up [_-_] scale down [_0_] reset font [_q_] quit"
   :bindings
-  ("+" cb-scale-font-transient-state-scale-up-font)
-  ("=" cb-scale-font-transient-state-scale-up-font)
-  ("-" cb-scale-font-transient-state-scale-down-font)
-  ("0" cb-scale-font-transient-state-reset-font-size)
+  ("+" x-scale-font-transient-state-scale-up-font)
+  ("=" x-scale-font-transient-state-scale-up-font)
+  ("-" x-scale-font-transient-state-scale-down-font)
+  ("0" x-scale-font-transient-state-reset-font-size)
   ("q" nil :exit t))
 
 
-(provide 'cb-scale-font-transient-state)
+(provide 'x-scale-font-transient-state)
 
-;;; cb-scale-font-transient-state.el ends here
+;;; x-scale-font-transient-state.el ends here
