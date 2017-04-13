@@ -12,6 +12,8 @@
   (require 'use-package))
 
 (require 'spacemacs-keys)
+;; TODO - move to use package
+(require 'key-chord)
 
 (use-package evil
   :preface
@@ -28,6 +30,40 @@
 
     (setq evil-want-visual-char-semi-exclusive t)
     (setq evil-want-Y-yank-to-eol t)
+
+    ;; Movement
+    (dolist (mode '(normal visual))
+      (evil-global-set-key mode (kbd "n") 'evil-next-line)
+      (evil-global-set-key mode (kbd "e") 'evil-previous-line)
+      (evil-global-set-key mode (kbd "i") 'evil-forward-char)
+      (evil-global-set-key mode (kbd "h") 'evil-backward-char))
+
+    ;; Escape
+    ;; TODO - move to use-package
+    (key-chord-mode 1)
+    (key-chord-define evil-insert-state-map  "ii" 'evil-normal-state)
+    (key-chord-define evil-visual-state-map "ii" 'evil-normal-state)
+    (key-chord-define evil-emacs-state-map "ii" 'evil-normal-state)
+    (key-chord-define evil-replace-state-map "ii" 'evil-normal-state)
+    (setq key-chord-two-keys-delay 0.5)
+
+    ;; Insert Mode
+    (evil-global-set-key 'normal (kbd "l") 'evil-insert-state)
+
+    ;; Search remapping
+    (evil-global-set-key 'normal "j" 'evil-ex-search-next)
+
+    ;; Close current buffer
+    (evil-global-set-key 'normal (kbd ";bd") (lambda()
+                                               (interactive)
+                                               (kill-buffer (current-buffer))))
+
+    ;; Moving between windows in emacs
+    (evil-leader/set-key 
+      "wn" 'evil-window-down
+      "we" 'evil-window-up
+      "wh" 'evil-window-left
+      "wi" 'evil-window-right)
 
     ;; Configure cursors.
 

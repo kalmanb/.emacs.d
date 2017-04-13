@@ -58,3 +58,9 @@
 [submodule "lisp/evil-ediff"]
 	path = lisp/evil-ediff
 	url = git@github.com:emacs-evil/evil-ediff.git
+[submodule "key-chord"]
+	path = key-chord
+	url = git@github.com:emacsmirror/key-chord.git
+[submodule "lisp/key-chord"]
+	path = lisp/key-chord
+	url = git@github.com:emacsmirror/key-chord.git
