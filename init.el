@@ -82,12 +82,12 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-basic-settings)
 (use-package x-leader-keys)
 (use-package x-evil)
+(use-package x-ivy)
+(use-package x-ag)
+(use-package x-projectile)
+(use-package x-elisp)
+(use-package x-modeline)
 ;; (use-package x-faces)
-;; (use-package x-modeline)
-;; (use-package x-ivy)
-;; (use-package x-ag)
-;; (use-package x-projectile)
-;; (use-package x-elisp)
 
 ;; Later
 ;; (use-package cb-smartparens)
@@ -97,7 +97,7 @@ If argument INTERACTIVE-P is set, log additional information."
 ;; (use-package cb-yasnippet)
 
 ;; TODO
-(use-package cb-auto-save)
+;; (use-package cb-auto-save)
 ;; (use-package cb-darwin :if (equal system-type 'darwin))
 ;; (use-package cb-avy)
 ;; (use-package cb-undo-tree)

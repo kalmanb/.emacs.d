@@ -64,3 +64,21 @@
 [submodule "lisp/key-chord"]
 	path = lisp/key-chord
 	url = git@github.com:emacsmirror/key-chord.git
+[submodule "lisp/swiper"]
+	path = lisp/swiper
+	url = git@github.com:abo-abo/swiper.git
+[submodule "lisp/flx"]
+	path = lisp/flx
+	url = git@github.com:lewang/flx.git
+[submodule "lisp/emacs-which-key"]
+	path = lisp/emacs-which-key
+	url = git@github.com:justbur/emacs-which-key.git
+[submodule "lisp/Emacs-wgrep"]
+	path = lisp/Emacs-wgrep
+	url = git@github.com:mhayashi1120/Emacs-wgrep.git
+[submodule "lisp/counsel-projectile"]
+	path = lisp/counsel-projectile
+	url = git@github.com:ericdanan/counsel-projectile.git
+[submodule "lisp/elisp-slime-nav"]
+	path = lisp/elisp-slime-nav
+	url = git@github.com:purcell/elisp-slime-nav.git
