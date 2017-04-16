@@ -82,3 +82,6 @@
 [submodule "lisp/elisp-slime-nav"]
 	path = lisp/elisp-slime-nav
 	url = git@github.com:purcell/elisp-slime-nav.git
+[submodule "lisp/company-mode"]
+	path = lisp/company-mode
+	url = git@github.com:company-mode/company-mode.git

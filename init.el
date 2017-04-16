@@ -87,13 +87,13 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-projectile)
 (use-package x-elisp)
 (use-package x-modeline)
+(use-package x-company)
+(use-package x-autoinsert)
 ;; (use-package x-faces)
 
 ;; Later
 ;; (use-package cb-smartparens)
 ;; (use-package cb-magit)
-;; (use-package cb-company)
-;; (use-package cb-autoinsert)
 ;; (use-package cb-yasnippet)
 
 ;; TODO
