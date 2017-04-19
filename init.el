@@ -89,21 +89,21 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-modeline)
 (use-package x-company)
 (use-package x-autoinsert)
-;; (use-package x-faces)
+(use-package x-faces)
+(use-package x-smartparens)
+(use-package x-flycheck)
+(use-package x-magit)
+(use-package x-avy)
 
 ;; Later
-;; (use-package cb-smartparens)
-;; (use-package cb-magit)
 ;; (use-package cb-yasnippet)
 
 ;; TODO
 ;; (use-package cb-auto-save)
 ;; (use-package cb-darwin :if (equal system-type 'darwin))
-;; (use-package cb-avy)
 ;; (use-package cb-undo-tree)
 ;; (use-package cb-ws-butler)
 ;; (use-package cb-parentheses)
-;; (use-package cb-flycheck)
 ;; (use-package cb-aggressive-indent)
 ;; (use-package cb-server)
 ;; (use-package cb-hexl)

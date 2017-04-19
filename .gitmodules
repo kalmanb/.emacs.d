@@ -85,3 +85,15 @@
 [submodule "lisp/company-mode"]
 	path = lisp/company-mode
 	url = git@github.com:company-mode/company-mode.git
+[submodule "lisp/smartparens"]
+	path = lisp/smartparens
+	url = git@github.com:Fuco1/smartparens.git
+[submodule "lisp/flycheck"]
+	path = lisp/flycheck
+	url = git@github.com:flycheck/flycheck.git
+[submodule "lisp/hydra"]
+	path = lisp/hydra
+	url = git@github.com:abo-abo/hydra.git
+[submodule "lisp/avy"]
+	path = lisp/avy
+	url = git@github.com:abo-abo/avy.git
