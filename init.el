@@ -101,6 +101,7 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-ws-butler)
 (use-package x-parentheses)
 (use-package x-aggressive-indent)
+(use-package x-ibuffer)
 
 ;; TODO
 ;; (use-package cb-auto-save)
@@ -117,7 +118,6 @@ If argument INTERACTIVE-P is set, log additional information."
 ;; (use-package cb-scala)
 ;; (use-package cb-groovy)
 ;; (use-package cb-rust)
-;; (use-package cb-ibuffer)
 ;; (use-package cb-yaml)
 ;; (use-package cb-go)
 ;; (use-package cb-spelling)
