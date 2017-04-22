@@ -79,6 +79,7 @@ If argument INTERACTIVE-P is set, log additional information."
 
 ;; Load features
 (use-package x-emacs)
+(use-package x-darwin :if (equal system-type 'darwin))
 (use-package x-basic-settings)
 (use-package x-leader-keys)
 (use-package x-evil)
@@ -94,13 +95,11 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-flycheck)
 (use-package x-magit)
 (use-package x-avy)
-
-;; Later
-;; (use-package cb-yasnippet)
+(use-package x-yasnippet)
+(use-package x-dired)
 
 ;; TODO
 ;; (use-package cb-auto-save)
-;; (use-package cb-darwin :if (equal system-type 'darwin))
 ;; (use-package cb-undo-tree)
 ;; (use-package cb-ws-butler)
 ;; (use-package cb-parentheses)
@@ -121,7 +120,6 @@ If argument INTERACTIVE-P is set, log additional information."
 ;; (use-package cb-ibuffer)
 ;; (use-package cb-yaml)
 ;; (use-package cb-go)
-;; (use-package cb-dired)
 ;; (use-package cb-spelling)
 ;; (use-package cb-diff)
 ;; (use-package cb-coffeescript)

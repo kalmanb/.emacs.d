@@ -46,7 +46,7 @@
              link-hint-open-multiple-links)
   :init
   (progn
-    (spacemacs-keys-declare-prefix "x" "urls"))
+    (spacemacs-keys-declare-prefix "x" "urls")))
   ;; Disabled for now Kal, conflicts with SPC-x
     ;; (spacemacs-keys-set-leader-keys
     ;;   "xo" #'link-hint-open-link

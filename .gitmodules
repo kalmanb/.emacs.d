@@ -97,3 +97,6 @@
 [submodule "lisp/avy"]
 	path = lisp/avy
 	url = git@github.com:abo-abo/avy.git
+[submodule "lisp/dired-plus"]
+	path = lisp/dired-plus
+	url = git@github.com:emacsmirror/dired-plus.git
