@@ -102,8 +102,11 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-parentheses)
 (use-package x-aggressive-indent)
 (use-package x-ibuffer)
+(use-package x-markdown)
 
 ;; TODO
+
+
 ;; (use-package cb-auto-save)
 ;; (use-package cb-server)
 ;; (use-package cb-hexl)
@@ -124,7 +127,6 @@ If argument INTERACTIVE-P is set, log additional information."
 ;; (use-package cb-diff)
 ;; (use-package cb-coffeescript)
 ;; (use-package cb-web-mode)
-;; (use-package cb-markdown)
 ;; (use-package cb-apidoc)
 ;; (use-package cb-restclient)
 ;; (use-package cb-calc)

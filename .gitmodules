@@ -112,3 +112,6 @@
 [submodule "lisp/aggressive-indent-mode"]
 	path = lisp/aggressive-indent-mode
 	url = git@github.com:Malabarba/aggressive-indent-mode.git
+[submodule "lisp/markdown-mode"]
+	path = lisp/markdown-mode
+	url = git@github.com:defunkt/markdown-mode.git
