@@ -106,3 +106,6 @@
 [submodule "lisp/ws-butler"]
 	path = lisp/ws-butler
 	url = git@github.com:lewang/ws-butler.git
+[submodule "lisp/paren-face"]
+	path = lisp/paren-face
+	url = git@github.com:tarsius/paren-face.git

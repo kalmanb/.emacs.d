@@ -99,10 +99,10 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-dired)
 (use-package x-undo-tree)
 (use-package x-ws-butler)
+(use-package x-parentheses)
 
 ;; TODO
 ;; (use-package cb-auto-save)
-;; (use-package cb-parentheses)
 ;; (use-package cb-aggressive-indent)
 ;; (use-package cb-server)
 ;; (use-package cb-hexl)
