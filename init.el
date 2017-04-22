@@ -97,11 +97,11 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-avy)
 (use-package x-yasnippet)
 (use-package x-dired)
+(use-package x-undo-tree)
+(use-package x-ws-butler)
 
 ;; TODO
 ;; (use-package cb-auto-save)
-;; (use-package cb-undo-tree)
-;; (use-package cb-ws-butler)
 ;; (use-package cb-parentheses)
 ;; (use-package cb-aggressive-indent)
 ;; (use-package cb-server)

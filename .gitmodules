@@ -103,3 +103,6 @@
 [submodule "lisp/with-editor"]
 	path = lisp/with-editor
 	url = git@github.com:magit/with-editor.git
+[submodule "lisp/ws-butler"]
+	path = lisp/ws-butler
+	url = git@github.com:lewang/ws-butler.git
