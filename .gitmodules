@@ -115,3 +115,6 @@
 [submodule "lisp/markdown-mode"]
 	path = lisp/markdown-mode
 	url = git@github.com:defunkt/markdown-mode.git
+[submodule "lisp/go-mode.el"]
+	path = lisp/go-mode.el
+	url = git@github.com:dominikh/go-mode.el.git

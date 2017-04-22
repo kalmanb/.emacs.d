@@ -103,6 +103,7 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-aggressive-indent)
 (use-package x-ibuffer)
 (use-package x-markdown)
+(use-package x-go)
 
 ;; TODO
 
@@ -122,7 +123,6 @@ If argument INTERACTIVE-P is set, log additional information."
 ;; (use-package cb-groovy)
 ;; (use-package cb-rust)
 ;; (use-package cb-yaml)
-;; (use-package cb-go)
 ;; (use-package cb-spelling)
 ;; (use-package cb-diff)
 ;; (use-package cb-coffeescript)
