@@ -109,3 +109,6 @@
 [submodule "lisp/paren-face"]
 	path = lisp/paren-face
 	url = git@github.com:tarsius/paren-face.git
+[submodule "lisp/aggressive-indent-mode"]
+	path = lisp/aggressive-indent-mode
+	url = git@github.com:Malabarba/aggressive-indent-mode.git
