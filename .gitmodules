@@ -100,3 +100,6 @@
 [submodule "lisp/dired-plus"]
 	path = lisp/dired-plus
 	url = git@github.com:emacsmirror/dired-plus.git
+[submodule "lisp/with-editor"]
+	path = lisp/with-editor
+	url = git@github.com:magit/with-editor.git
