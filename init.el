@@ -1,6 +1,6 @@
 ;;; init.el --- Startup file for Emacs.  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2016  Chris Barrett
+                                        ;-; Copyright (C) 2016  Chris Barrett
 
 ;; Author: Chris Barrett <chris+emacs@walrus.cool>
 
@@ -104,6 +104,7 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-ibuffer)
 (use-package x-markdown)
 (use-package x-go)
+(use-package x-web-mode)
 
 ;; TODO
 

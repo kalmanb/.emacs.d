@@ -58,8 +58,11 @@
                                                (interactive)
                                                (kill-buffer (current-buffer))))
 
+    ;; Rebind C-u to scroll up
+    (define-key evil-normal-state-map (kbd "C-u") #'evil-scroll-up)
+
     ;; Moving between windows in emacs
-    (evil-leader/set-key 
+    (evil-leader/set-key
       "wn" 'evil-window-down
       "we" 'evil-window-up
       "wh" 'evil-window-left

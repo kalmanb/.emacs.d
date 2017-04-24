@@ -77,7 +77,6 @@
       "SPC w"   "window"
       "SPC s"   "symbols"
       "SPC t"   "toggles"
-      "SPC SPC" "M-x"
       "SPC m"   '("major-mode-cmd" . "Major mode commands"))
 
     (which-key-mode +1)))
@@ -101,14 +100,14 @@
 
     (spacemacs-keys-set-leader-keys
       "u"   #'universal-argument
-      "SPC" #'execute-extended-command
+      "SPC" #'mode-line-other-buffer
       "TAB" #'x/alternate-buffer
       "|"   #'x/toggle-window-split
 
       "!"   #'shell-command
 
-      "b d" #'kill-this-buffer
-      "b b" #'bury-buffer
+      "b d" #'bury-buffer
+      "b b" #'ivy-switch-buffer
       "b v" #'x-leader-keys/reload-file
 
       "C" #'compile

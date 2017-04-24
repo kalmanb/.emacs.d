@@ -118,3 +118,24 @@
 [submodule "lisp/go-mode.el"]
 	path = lisp/go-mode.el
 	url = git@github.com:dominikh/go-mode.el.git
+[submodule "lisp/web-mode"]
+	path = lisp/web-mode
+	url = git@github.com:fxbois/web-mode.git
+[submodule "lisp/emmet-mode"]
+	path = lisp/emmet-mode
+	url = git@github.com:smihica/emmet-mode.git
+[submodule "lisp/flow-minor-mode"]
+	path = lisp/flow-minor-mode
+	url = git@github.com:an-sh/flow-minor-mode.git
+[submodule "lisp/emacs-flycheck-flow"]
+	path = lisp/emacs-flycheck-flow
+	url = git@github.com:lbolla/emacs-flycheck-flow.git
+[submodule "lisp/company-flow"]
+	path = lisp/company-flow
+	url = git@github.com:aaronjensen/company-flow.git
+[submodule "lisp/company-tern"]
+	path = lisp/company-tern
+	url = git@github.com:proofit404/company-tern.git
+[submodule "lisp/tern"]
+	path = lisp/tern
+	url = git@github.com:ternjs/tern.git
