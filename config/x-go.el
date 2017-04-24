@@ -30,9 +30,6 @@
 
     (spacemacs-keys-set-leader-keys-for-major-mode 'go-mode
       "hh" 'godoc-at-point
-      "ig" 'go-goto-imports
-      "ia" 'go-import-add
-      "ir" 'go-remove-unused-imports
       "eb" 'go-play-buffer
       "er" 'go-play-region
       "ed" 'go-download-play
@@ -61,6 +58,8 @@
 
   :config
   (progn
+    (setq gofmt-command "goimports")
+
     (setq gofmt-show-errors nil)
     (evil-define-key 'normal go-mode-map (kbd "K") #'godoc-at-point)
 
