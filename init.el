@@ -106,8 +106,6 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-go)
 (use-package x-web-mode)
 
-;; TODO
-
 
 ;; (use-package cb-auto-save)
 ;; (use-package cb-server)
