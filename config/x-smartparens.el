@@ -145,9 +145,10 @@
              :bind "M-{"
              :pre-handlers '(x-smartparens-add-space-before-sexp-insertion)
              :post-handlers '(("||\n[i]" "RET") ("| " "SPC")))
-    (sp-pair "[" "]"
-             :bind "M-["
-             :post-handlers '(("||\n[i]" "RET") ("| " "SPC")))
+    ;; Breaks Command-v in osx
+    ;; (sp-pair "[" "]"
+    ;;          :bind "M-["
+    ;;          :post-handlers '(("||\n[i]" "RET") ("| " "SPC")))
     (sp-pair "(" ")"
              :bind "M-("
              :post-handlers '(("||\n[i]" "RET") ("| " "SPC")))
