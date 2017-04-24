@@ -87,6 +87,7 @@
     (autoload 'evil-window-next "evil-commands")
     (autoload 'evil-window-split "evil-commands")
     (autoload 'evil-window-vsplit "evil-commands")
+    (autoload 'counsel-git-log "counsel")
 
     (defun x-leader-keys/reload-file ()
       "Revisit the current file."
@@ -128,6 +129,8 @@
       "g i" #'x-goto-init-file
       "g m" #'x-goto-messages
       "g p" #'x-goto-personal-config
+
+      "g l" #'counsel-git-log
 
       "h d c" #'describe-face
       "h d k" #'describe-key

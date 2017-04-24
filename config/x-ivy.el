@@ -77,11 +77,13 @@
 
 (use-package counsel
   :commands (counsel-M-x
+             counsel-command-history
              counsel-descbinds
              counsel-describe-function
              counsel-describe-variable
              counsel-expression-history
              counsel-find-file
+             counsel-find-jump
              counsel-imenu
              counsel-recentf
              counsel-yank-pop)
@@ -102,9 +104,12 @@
       "x" #'counsel-M-x
       "?"   #'counsel-descbinds
       "f f" #'counsel-find-file
+      "f j" #'counsel-find-jump
       "f r" #'counsel-recentf
       "k r" #'counsel-yank-pop
-      "i"   #'counsel-imenu
+      "i i" #'counsel-imenu
+      "i c" #'counsel-command-history
+
       "h d f" #'counsel-describe-function
       "h d v" #'counsel-describe-variable)
 
@@ -118,10 +123,17 @@
     (define-key counsel-find-file-map (kbd "C-M-j") #'ivy-immediate-done)
     (define-key counsel-find-file-map (kbd "C-h") #'counsel-up-directory)
 
+    (setq counsel-yank-pop-separator (concat "\n" (make-string 70 ?-) "\n"))
+
     ;; Prefill counsel-ag with the symbol at point.
     (advice-add 'counsel-ag :around #'x-ivy--ag-populate-with-symbol-at-point)
 
     (counsel-mode +1)))
+
+
+(use-package ivy-hydra
+  :after ivy)
+
 
 (use-package swiper
   :bind (("C-s" . swiper))
