@@ -45,8 +45,7 @@
   :init
   (progn
     (spacemacs-keys-set-leader-keys
-      "r" #'ivy-resume
-      "b s" #'ivy-switch-buffer)
+      "r" #'ivy-resume)
 
     (bind-key "C-c C-r" #'ivy-resume)
     (bind-key "C-x b" #'ivy-switch-buffer))

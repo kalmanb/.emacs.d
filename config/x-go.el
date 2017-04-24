@@ -33,7 +33,7 @@
       "eb" 'go-play-buffer
       "er" 'go-play-region
       "ed" 'go-download-play
-      "ga" 'ff-find-other-file
+      "ga" 'ff-find-other-file ;; Jump to test file and back
       "gc" 'go-coverage))
 
   :preface
@@ -126,6 +126,11 @@
 
 (use-package go-peg-mode
   :mode ("\\.peg\\'" . go-peg-mode))
+
+(use-package go-rename
+  :init
+  (spacemacs-keys-declare-prefix-for-mode 'go-mode "mr" "rename")
+  (spacemacs-keys-set-leader-keys-for-major-mode 'go-mode "rn" 'go-rename))
 
 (provide 'x-go)
 
