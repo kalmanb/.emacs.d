@@ -53,8 +53,11 @@
   :config
   (progn
     (setq projectile-completion-system 'ivy)
-    (setq projectile-switch-project-action (lambda ()
-                                             (dired (projectile-project-p))))
+
+    ;; Kal - I don't like dired
+    ;; (setq projectile-switch-project-action (lambda ()
+    ;;                                          (dired (projectile-project-p))))
+
     (setq projectile-cache-file (concat x-emacs-cache-directory "/projectile.cache"))
     (setq projectile-enable-caching t)
 

@@ -132,6 +132,31 @@
   (spacemacs-keys-declare-prefix-for-mode 'go-mode "mr" "rename")
   (spacemacs-keys-set-leader-keys-for-major-mode 'go-mode "rn" 'go-rename))
 
+(use-package flycheck-gometalinter
+  :defer t
+  :init
+  (add-hook 'go-mode-hook #'x-go--enable-gometalinter t))
+
+;; Not working
+(use-package go-guru
+  :defer t
+  :init
+  (spacemacs-keys-declare-prefix-for-mode 'go-mode "mf" "guru")
+  (spacemacs-keys-set-leader-keys-for-major-mode 'go-mode
+    "fd" #'go-guru-describe
+    "ff" #'go-guru-freevars
+    "fi" #'go-guru-implements
+    "fc" #'go-guru-peers
+    "fr" #'go-guru-referrers
+    "fj" #'go-guru-definition
+    "fp" #'go-guru-pointsto
+    "fs" #'go-guru-callstack
+    "fe" #'go-guru-whicherrs
+    "f<" #'go-guru-callers
+    "f>" #'go-guru-callees
+    "fo" #'go-guru-set-scope))
+
+
 (provide 'x-go)
 
 ;;; x-go.el ends here

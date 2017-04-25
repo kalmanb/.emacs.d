@@ -139,3 +139,9 @@
 [submodule "lisp/tern"]
 	path = lisp/tern
 	url = git@github.com:ternjs/tern.git
+[submodule "lisp/flycheck-gometalinter"]
+	path = lisp/flycheck-gometalinter
+	url = git@github.com:favadi/flycheck-gometalinter.git
+[submodule "lisp/yasnippet"]
+	path = lisp/yasnippet
+	url = git@github.com:joaotavora/yasnippet.git
