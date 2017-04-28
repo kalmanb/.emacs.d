@@ -51,7 +51,8 @@
     (evil-global-set-key 'normal (kbd "l") 'evil-insert-state)
 
     ;; Search remapping
-    (evil-global-set-key 'normal "j" 'evil-ex-search-next)
+    (evil-global-set-key 'normal "j" 'evil-search-previous)
+    (evil-global-set-key 'normal (kbd "N") 'evil-search-next)
 
     ;; Close current buffer
     (evil-global-set-key 'normal (kbd ";bd") (lambda()
