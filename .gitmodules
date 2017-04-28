@@ -145,3 +145,6 @@
 [submodule "lisp/yasnippet"]
 	path = lisp/yasnippet
 	url = git@github.com:joaotavora/yasnippet.git
+[submodule "lisp/undo-tree"]
+	path = lisp/undo-tree
+	url = http://www.dr-qubit.org/git/undo-tree.git
