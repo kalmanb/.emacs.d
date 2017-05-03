@@ -107,7 +107,7 @@
 
       "!"   #'shell-command
 
-      "b d" #'bury-buffer
+      "b d" #'kill-this-buffer
       "b b" #'ivy-switch-buffer
       "b v" #'x-leader-keys/reload-file
 

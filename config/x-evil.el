@@ -54,11 +54,6 @@
     (evil-global-set-key 'normal "j" 'evil-search-previous)
     (evil-global-set-key 'normal (kbd "N") 'evil-search-next)
 
-    ;; Close current buffer
-    (evil-global-set-key 'normal (kbd ";bd") (lambda()
-                                               (interactive)
-                                               (kill-buffer (current-buffer))))
-
     ;; Rebind C-u to scroll up
     (define-key evil-normal-state-map (kbd "C-u") #'evil-scroll-up)
 

@@ -184,7 +184,7 @@
     (propertize (buffer-name) 'face 'x-header-line-format-nonemphased-element)))
 
 (defun x-header-line-format--line-info ()
-  (let ((str "Line %2l"))
+  (let ((str "%2l:%2c"))
     (if (x-header-line-format--window-selected?)
         str
       (propertize str 'face 'x-header-line-format-nonemphased-element))))
