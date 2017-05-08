@@ -30,6 +30,7 @@
 
 (require 'package)
 (add-to-list 'package-archives '("MELPA Stable" . "https://stable.melpa.org/packages/"))
+(add-to-list 'package-archives '("MELPA" . "https://melpa.org/packages/"))
 (package-initialize)
 (unless package-archive-contents
   (package-refresh-contents))
@@ -105,6 +106,7 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-markdown)
 (use-package x-go)
 (use-package x-web-mode)
+(use-package x-kubernetes)
 
 
 ;; (use-package cb-auto-save)
