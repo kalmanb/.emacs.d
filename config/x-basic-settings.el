@@ -326,6 +326,12 @@ Optional arg JUSTIFY will justify comments and strings."
   :config
   (scroll-bar-mode -1))
 
+(use-package hl-line
+  :config
+  (progn
+    (global-hl-line-mode 1)
+    (set-face-background 'hl-line "grey15")))
+
 (use-package align
   :bind (("C-x a a" . align-regexp)))
 
