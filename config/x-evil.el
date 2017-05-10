@@ -103,9 +103,17 @@
   :defines (evil-want-Y-yank-to-eol))
 
 (use-package evil-terminal-cursor-changer
+  :after evil
   :if (not (display-graphic-p))
   :commands (evil-terminal-cursor-changer-activate)
-  :config (evil-terminal-cursor-changer-activate))
+  :config (progn
+            ;; Configure cursors.
+            (setq evil-motion-state-cursor '("plum3" box))
+            (setq evil-visual-state-cursor '("gray" (box . 2)))
+            (setq evil-normal-state-cursor '("IndianRed" box))
+            (setq evil-insert-state-cursor '("chartreuse3" (bar . 2)))
+            (setq evil-emacs-state-cursor  '("SkyBlue2" hbar))
+            (evil-terminal-cursor-changer-activate)))
 
 (use-package evil-surround
   :after evil
