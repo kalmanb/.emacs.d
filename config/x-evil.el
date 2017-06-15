@@ -45,7 +45,7 @@
     (key-chord-define evil-visual-state-map "ii" 'evil-normal-state)
     (key-chord-define evil-emacs-state-map "ii" 'evil-normal-state)
     (key-chord-define evil-replace-state-map "ii" 'evil-normal-state)
-    (setq key-chord-two-keys-delay 0.5)
+    (setq key-chord-two-keys-delay 0.7)
 
     ;; Insert Mode
     (evil-global-set-key 'normal (kbd "l") 'evil-insert-state)

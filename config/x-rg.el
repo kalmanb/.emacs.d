@@ -1,4 +1,4 @@
-;;; x-ag.el --- Configuration for ag and related utils.  -*- lexical-binding: t; -*-
+;;; x-rg.el --- Configuration for rg and related utils.  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Chris Barrett
 
@@ -11,16 +11,13 @@
 (eval-when-compile
   (require 'use-package))
 
-(use-package ag
-  :commands ag)
-
 (use-package wgrep
   :defer t
   :preface
   (progn
     (autoload 'wgrep-finish-edit "wgrep")
 
-    (defun x-ag-wgrep-finish-edit-kill-buffer ()
+    (defun x-rg-wgrep-finish-edit-kill-buffer ()
       "Finish the current wgrep edit and kill the wgrep buffer."
       (interactive)
       (let ((buf (current-buffer)))
@@ -30,11 +27,8 @@
   :config
   (progn
     (setq wgrep-auto-save-buffer t)
-    (define-key wgrep-mode-map [remap wgrep-finish-edit] #'x-ag-wgrep-finish-edit-kill-buffer)))
+    (define-key wgrep-mode-map [remap wgrep-finish-edit] #'x-rg-wgrep-finish-edit-kill-buffer)))
 
-(use-package wgrep-ag
-  :after ag)
+(provide 'x-rg)
 
-(provide 'x-ag)
-
-;;; x-ag.el ends here
+;;; x-rg.el ends here

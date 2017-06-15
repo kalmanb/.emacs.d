@@ -85,7 +85,7 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-leader-keys)
 (use-package x-evil)
 (use-package x-ivy)
-(use-package x-ag)
+(use-package x-rg)
 (use-package x-projectile)
 (use-package x-elisp)
 (use-package x-modeline)

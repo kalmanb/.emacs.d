@@ -15,7 +15,7 @@
 (require 'spacemacs-keys)
 
 (use-package projectile
-  :commands (projectile-ag
+  :commands (projectile-rg
              projectile-compile-project
              projectile-invalidate-cache
              projectile-mode
@@ -44,7 +44,7 @@
       "p!" #'projectile-run-shell-command-in-root
       "p&" #'projectile-run-async-shell-command-in-root
       "pI" #'projectile-invalidate-cache
-      "pa" #'projectile-ag
+      "pa" #'projectile-rg
       "pc" #'projectile-compile-project
       "pr" #'projectile-replace
       "pt" #'x-projectile-test-project
@@ -97,15 +97,15 @@
              counsel-projectile-find-dir
              counsel-projectile-switch-project
              counsel-projectile-switch-to-buffer
-             counsel-projectile-ag)
+             counsel-projectile-rg)
   :init
   (spacemacs-keys-set-leader-keys
     "pf" #'counsel-projectile-find-file
     "pd" #'counsel-projectile-find-dir
     "pb" #'counsel-projectile-switch-to-buffer
     "pp" #'counsel-projectile-switch-project
-    "pa" #'counsel-projectile-ag
-    "/"  #'counsel-projectile-ag)
+    "pa" #'counsel-projectile-rg
+    "/"  #'counsel-projectile-rg)
 
   :config
   (counsel-projectile-on))
