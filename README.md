@@ -26,3 +26,9 @@ C-c C-o - ivy occur
 C-x C-q - dired edit mode
 C-x C-s - save
 
+# Projectile/rg Ignore
+cat .projectile
+- /flow-typed
+
+cat .ignore
+flow-typed
