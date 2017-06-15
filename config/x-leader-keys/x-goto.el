@@ -13,6 +13,11 @@
   (interactive)
   (find-file (concat user-emacs-directory "init.el")))
 
+(defun x-goto-readme-file ()
+  "Open the Emacs init.el file."
+  (interactive)
+  (find-file (concat user-emacs-directory "README.md")))
+
 (defun x-goto-personal-config ()
   "Open the personal configuration file."
   (interactive)

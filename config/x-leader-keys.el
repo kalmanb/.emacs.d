@@ -21,6 +21,7 @@
 (autoload 'x/sudo-edit "x-sudo-edit")
 (autoload 'x/toggle-window-split "x-toggle-window-split")
 (autoload 'x-goto-init-file "x-goto")
+(autoload 'x-goto-readme-file "x-goto")
 (autoload 'x-goto-messages "x-goto")
 (autoload 'x-goto-personal-config "x-goto")
 (autoload 'org-narrow-to-subtree "org")
@@ -127,6 +128,7 @@
       "f y" #'x/copy-buffer-path
 
       "g i" #'x-goto-init-file
+      "g r" #'x-goto-readme-file
       "g m" #'x-goto-messages
       "g p" #'x-goto-personal-config
 
