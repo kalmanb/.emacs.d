@@ -10,6 +10,8 @@ Yes it's emacs :)
 
 
 # Keybindings
+Major mode leader is ',' or 'spc m'
+Meta key is option on Mac
 
 |key      | description                  |
 |---------|------------------------------|
@@ -17,7 +19,17 @@ Yes it's emacs :)
 |spc g r  |go to .emacs.d/README.md      |
 |spc g i  |go to .emacs.d/init.el        |
 |spc /    |search
-|spc r l  |search resume 
+|spc r l  |search resume
+
+
+# GO
+|key      | description                  |
+|---------|------------------------------|
+|k        | goto def
+|K        | go-doc at point
+|,hh      | go-doc at point
+|,rn      | rename
+|spc mrn  | rename
 
 
 # Edit Projectile Search
@@ -32,3 +44,6 @@ cat .projectile
 
 cat .ignore
 flow-typed
+
+
+spacemas keys major mode leadent

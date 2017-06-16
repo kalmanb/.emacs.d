@@ -23,15 +23,11 @@
 
   :init
   (progn
-    (spacemacs-keys-declare-prefix-for-mode 'go-mode "me" "playground")
     (spacemacs-keys-declare-prefix-for-mode 'go-mode "mg" "goto")
     (spacemacs-keys-declare-prefix-for-mode 'go-mode "mh" "help")
-    (spacemacs-keys-declare-prefix-for-mode 'go-mode "mi" "imports")
 
     (spacemacs-keys-set-leader-keys-for-major-mode 'go-mode
       "hh" 'godoc-at-point
-      "eb" 'go-play-buffer
-      "er" 'go-play-region
       "ed" 'go-download-play
       "ga" 'ff-find-other-file ;; Jump to test file and back
       "gc" 'go-coverage))
@@ -60,8 +56,11 @@
   (progn
     (setq gofmt-command "goimports")
 
-    (setq gofmt-show-errors nil)
+    ;; (setq gofmt-show-errors nil)
+
     (evil-define-key 'normal go-mode-map (kbd "K") #'godoc-at-point)
+    (evil-define-key 'normal go-mode-map (kbd "k") #'godef-jump)
+    (evil-define-key 'insert go-mode-map (kbd "k") #'godef-jump)
 
     (add-hook 'go-mode-hook #'x-go--set-local-vars)
     (add-hook 'before-save-hook #'gofmt-before-save))
