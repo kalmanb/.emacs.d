@@ -1,0 +1,4 @@
+# key: it
+# name: import type
+# --
+import type { ${1:name} } from '${2:name}';$0

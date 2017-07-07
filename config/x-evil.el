@@ -57,6 +57,9 @@
     ;; Rebind C-u to scroll up
     (define-key evil-normal-state-map (kbd "C-u") #'evil-scroll-up)
 
+    ;; Block :x
+    (evil-ex-define-cmd "x" #'x-evil-save-buffers-and-nope)
+
     ;; Moving between windows in emacs
     (evil-leader/set-key
       "wn" 'evil-window-down
