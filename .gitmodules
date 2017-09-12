@@ -1,168 +1,168 @@
 [submodule "lisp/emacs-noflet"]
 	path = lisp/emacs-noflet
-	url = git@github.com:nicferrier/emacs-noflet.git
+	url = https://github.com/nicferrier/emacs-noflet.git
 [submodule "lisp/use-package"]
 	path = lisp/use-package
-	url = git@github.com:jwiegley/use-package.git
+	url = https://github.com/jwiegley/use-package.git
 [submodule "lisp/s"]
 	path = lisp/s
-	url = git@github.com:magnars/s.el.git
+	url = https://github.com/magnars/s.el.git
 [submodule "lisp/dash"]
 	path = lisp/dash
-	url = git@github.com:magnars/dash.el.git
+	url = https://github.com/magnars/dash.el.git
 [submodule "lisp/f"]
 	path = lisp/f
-	url = git@github.com:rejeep/f.el.git
+	url = https://github.com/rejeep/f.el.git
 [submodule "lisp/magit"]
 	path = lisp/magit
-	url = git@github.com:magit/magit.git
+	url = https://github.com/magit/magit.git
 [submodule "lisp/emacs-bind-map"]
 	path = lisp/emacs-bind-map
-	url = git@github.com:justbur/emacs-bind-map.git
+	url = https://github.com/justbur/emacs-bind-map.git
 [submodule "lisp/evil-nerd-commenter"]
 	path = lisp/evil-nerd-commenter
-	url = git@github.com:redguardtoo/evil-nerd-commenter.git
+	url = https://github.com/redguardtoo/evil-nerd-commenter.git
 [submodule "lisp/evil"]
 	path = lisp/evil
-	url = git@github.com:emacs-evil/evil.git
+	url = https://github.com/emacs-evil/evil.git
 [submodule "lisp/vi-tilde-fringe"]
 	path = lisp/vi-tilde-fringe
-	url = git@github.com:syl20bnr/vi-tilde-fringe.git
+	url = https://github.com/syl20bnr/vi-tilde-fringe.git
 [submodule "lisp/evil-numbers"]
 	path = lisp/evil-numbers
-	url = git@github.com:cofi/evil-numbers.git
+	url = https://github.com/cofi/evil-numbers.git
 [submodule "lisp/evil-matchit"]
 	path = lisp/evil-matchit
-	url = git@github.com:redguardtoo/evil-matchit.git
+	url = https://github.com/redguardtoo/evil-matchit.git
 [submodule "lisp/evil-search-highlight-persist"]
 	path = lisp/evil-search-highlight-persist
-	url = git@github.com:juanjux/evil-search-highlight-persist.git
+	url = https://github.com/juanjux/evil-search-highlight-persist.git
 [submodule "lisp/projectile"]
 	path = lisp/projectile
-	url = git@github.com:bbatsov/projectile.git
+	url = https://github.com/bbatsov/projectile.git
 [submodule "lisp/evil-terminal-cursor-changer"]
 	path = lisp/evil-terminal-cursor-changer
-	url = git@github.com:7696122/evil-terminal-cursor-changer.git
+	url = https://github.com/7696122/evil-terminal-cursor-changer.git
 [submodule "lisp/evil-surround"]
 	path = lisp/evil-surround
-	url = git@github.com:timcharper/evil-surround.git
+	url = https://github.com/timcharper/evil-surround.git
 [submodule "lisp/evil-iedit-state"]
 	path = lisp/evil-iedit-state
-	url = git@github.com:syl20bnr/evil-iedit-state.git
+	url = https://github.com/syl20bnr/evil-iedit-state.git
 [submodule "lisp/evil-magit"]
 	path = lisp/evil-magit
-	url = git@github.com:emacs-evil/evil-magit.git
+	url = https://github.com/emacs-evil/evil-magit.git
 [submodule "lisp/evil-args"]
 	path = lisp/evil-args
-	url = git@github.com:wcsmith/evil-args.git
+	url = https://github.com/wcsmith/evil-args.git
 [submodule "lisp/evil-ediff"]
 	path = lisp/evil-ediff
-	url = git@github.com:emacs-evil/evil-ediff.git
+	url = https://github.com/emacs-evil/evil-ediff.git
 [submodule "key-chord"]
 	path = key-chord
-	url = git@github.com:emacsmirror/key-chord.git
+	url = https://github.com/emacsmirror/key-chord.git
 [submodule "lisp/key-chord"]
 	path = lisp/key-chord
-	url = git@github.com:emacsmirror/key-chord.git
+	url = https://github.com/emacsmirror/key-chord.git
 [submodule "lisp/swiper"]
 	path = lisp/swiper
-	url = git@github.com:abo-abo/swiper.git
+	url = https://github.com/abo-abo/swiper.git
 [submodule "lisp/flx"]
 	path = lisp/flx
-	url = git@github.com:lewang/flx.git
+	url = https://github.com/lewang/flx.git
 [submodule "lisp/emacs-which-key"]
 	path = lisp/emacs-which-key
-	url = git@github.com:justbur/emacs-which-key.git
+	url = https://github.com/justbur/emacs-which-key.git
 [submodule "lisp/Emacs-wgrep"]
 	path = lisp/Emacs-wgrep
-	url = git@github.com:mhayashi1120/Emacs-wgrep.git
+	url = https://github.com/mhayashi1120/Emacs-wgrep.git
 [submodule "lisp/counsel-projectile"]
 	path = lisp/counsel-projectile
-	url = git@github.com:ericdanan/counsel-projectile.git
+	url = https://github.com/ericdanan/counsel-projectile.git
 [submodule "lisp/elisp-slime-nav"]
 	path = lisp/elisp-slime-nav
-	url = git@github.com:purcell/elisp-slime-nav.git
+	url = https://github.com/purcell/elisp-slime-nav.git
 [submodule "lisp/company-mode"]
 	path = lisp/company-mode
-	url = git@github.com:company-mode/company-mode.git
+	url = https://github.com/company-mode/company-mode.git
 [submodule "lisp/smartparens"]
 	path = lisp/smartparens
-	url = git@github.com:Fuco1/smartparens.git
+	url = https://github.com/Fuco1/smartparens.git
 [submodule "lisp/flycheck"]
 	path = lisp/flycheck
-	url = git@github.com:flycheck/flycheck.git
+	url = https://github.com/flycheck/flycheck.git
 [submodule "lisp/hydra"]
 	path = lisp/hydra
-	url = git@github.com:abo-abo/hydra.git
+	url = https://github.com/abo-abo/hydra.git
 [submodule "lisp/avy"]
 	path = lisp/avy
-	url = git@github.com:abo-abo/avy.git
+	url = https://github.com/abo-abo/avy.git
 [submodule "lisp/dired-plus"]
 	path = lisp/dired-plus
-	url = git@github.com:emacsmirror/dired-plus.git
+	url = https://github.com/emacsmirror/dired-plus.git
 [submodule "lisp/with-editor"]
 	path = lisp/with-editor
-	url = git@github.com:magit/with-editor.git
+	url = https://github.com/magit/with-editor.git
 [submodule "lisp/ws-butler"]
 	path = lisp/ws-butler
-	url = git@github.com:lewang/ws-butler.git
+	url = https://github.com/lewang/ws-butler.git
 [submodule "lisp/paren-face"]
 	path = lisp/paren-face
-	url = git@github.com:tarsius/paren-face.git
+	url = https://github.com/tarsius/paren-face.git
 [submodule "lisp/aggressive-indent-mode"]
 	path = lisp/aggressive-indent-mode
-	url = git@github.com:Malabarba/aggressive-indent-mode.git
+	url = https://github.com/Malabarba/aggressive-indent-mode.git
 [submodule "lisp/markdown-mode"]
 	path = lisp/markdown-mode
-	url = git@github.com:defunkt/markdown-mode.git
+	url = https://github.com/defunkt/markdown-mode.git
 [submodule "lisp/go-mode.el"]
 	path = lisp/go-mode.el
-	url = git@github.com:dominikh/go-mode.el.git
+	url = https://github.com/dominikh/go-mode.el.git
 [submodule "lisp/web-mode"]
 	path = lisp/web-mode
-	url = git@github.com:fxbois/web-mode.git
+	url = https://github.com/fxbois/web-mode.git
 [submodule "lisp/emmet-mode"]
 	path = lisp/emmet-mode
-	url = git@github.com:smihica/emmet-mode.git
+	url = https://github.com/smihica/emmet-mode.git
 [submodule "lisp/flow-minor-mode"]
 	path = lisp/flow-minor-mode
-	url = git@github.com:an-sh/flow-minor-mode.git
+	url = https://github.com/an-sh/flow-minor-mode.git
 [submodule "lisp/emacs-flycheck-flow"]
 	path = lisp/emacs-flycheck-flow
-	url = git@github.com:lbolla/emacs-flycheck-flow.git
+	url = https://github.com/lbolla/emacs-flycheck-flow.git
 [submodule "lisp/company-flow"]
 	path = lisp/company-flow
-	url = git@github.com:aaronjensen/company-flow.git
+	url = https://github.com/aaronjensen/company-flow.git
 [submodule "lisp/company-tern"]
 	path = lisp/company-tern
-	url = git@github.com:proofit404/company-tern.git
+	url = https://github.com/proofit404/company-tern.git
 [submodule "lisp/tern"]
 	path = lisp/tern
-	url = git@github.com:ternjs/tern.git
+	url = https://github.com/ternjs/tern.git
 [submodule "lisp/flycheck-gometalinter"]
 	path = lisp/flycheck-gometalinter
-	url = git@github.com:favadi/flycheck-gometalinter.git
+	url = https://github.com/favadi/flycheck-gometalinter.git
 [submodule "lisp/yasnippet"]
 	path = lisp/yasnippet
-	url = git@github.com:joaotavora/yasnippet.git
+	url = https://github.com/joaotavora/yasnippet.git
 [submodule "lisp/undo-tree"]
 	path = lisp/undo-tree
 	url = http://www.dr-qubit.org/git/undo-tree.git
 [submodule "lisp/kubernetes-el"]
 	path = lisp/kubernetes-el
-	url = git@github.com:chrisbarrett/kubernetes-el.git
+	url = https://github.com/chrisbarrett/kubernetes-el.git
 [submodule "lisp/goto-chg"]
 	path = lisp/goto-chg
-	url = git@github.com:martinp26/goto-chg.git
+	url = https://github.com/martinp26/goto-chg.git
 [submodule "lisp/emacs-async"]
 	path = lisp/emacs-async
-	url = git@github.com:jwiegley/emacs-async.git
+	url = https://github.com/jwiegley/emacs-async.git
 [submodule "lisp/gocode"]
 	path = lisp/gocode
-	url = git@github.com:nsf/gocode.git
+	url = https://github.com/nsf/gocode.git
 [submodule "lisp/auto-complete"]
 	path = lisp/auto-complete
-	url = git@github.com:auto-complete/auto-complete.git
+	url = https://github.com/auto-complete/auto-complete.git
 [submodule "lisp/popup-el"]
 	path = lisp/popup-el
-	url = git@github.com:auto-complete/popup-el.git
+	url = https://github.com/auto-complete/popup-el.git
