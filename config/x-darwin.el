@@ -24,11 +24,11 @@
   :functions
   (exec-path-from-shell-initialize))
 
-(use-package osx-trash
-  :config
-  (osx-trash-setup)
-  :functions
-  (osx-trash-setup))
+;; (use-package osx-trash
+;;   :config
+;;   (osx-trash-setup)
+;;   :functions
+;;   (osx-trash-setup))
 
 
 (provide 'x-darwin)

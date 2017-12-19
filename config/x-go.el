@@ -85,9 +85,9 @@
       (setq company-go-show-annotation t))
     (add-hook 'go-mode-hook #'x-go-company-setup)))
 
-(use-package go-eldoc
-  :after go-mode
-  :config (add-hook 'go-mode-hook 'go-eldoc-setup))
+;; (use-package go-eldoc
+;;   :after go-mode
+;;   :config (add-hook 'go-mode-hook 'go-eldoc-setup))
 
 (use-package x-go-run
   :after go-mode
@@ -143,7 +143,6 @@
     (setq flycheck-gometalinter-vendor t)
     (setq flycheck-gometalinter-fast t)))
 
-
 ;; Not working
 (use-package go-guru
   :defer t
@@ -166,6 +165,7 @@
 (use-package go-autocomplete
   )
 
+(use-package go-expanderr)
 
 (provide 'x-go)
 

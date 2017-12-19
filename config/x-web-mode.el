@@ -194,10 +194,12 @@
              prettier-before-save)
   :config
   (progn
-    (setq prettier-args '("--single-quote" "--trailing-comma=es5"))
-    (setq prettier-target-mode "x-web-js-mode")
-    (add-hook 'before-save-hook #'prettier-before-save))
+    (setq prettier-js-args '("--single-quote" "--trailing-comma=es5"))
+    ;; (setq prettier-target-mode "x-web-js-mode")
+    ;; (add-hook 'before-save-hook #'prettier-before-save)
+    )
   :init
+  (add-hook 'web-mode-hook 'prettier-js-mode)
   (progn
     (spacemacs-keys-set-leader-keys-for-major-mode 'x-web-js-mode
       "." #'prettier)))

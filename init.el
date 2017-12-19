@@ -63,7 +63,8 @@ If argument INTERACTIVE-P is set, log additional information."
 
     ;; TODO
     ;; (add-to-list 'load-path (concat lisp-dir "/org-mode/contrib/lisp"))
-    ;; (add-to-list 'load-path (concat lisp-dir "/gocode/emacs-company"))
+    (add-to-list 'load-path (concat lisp-dir "/gocode/emacs-company"))
+    (add-to-list 'load-path (concat lisp-dir "/expanderr/lisp/go-expanderr.el"))
 
     (setq load-path (seq-filter #'file-directory-p load-path))
     (setq Info-default-directory-list (seq-filter #'file-directory-p Info-default-directory-list))
@@ -106,8 +107,8 @@ If argument INTERACTIVE-P is set, log additional information."
 (use-package x-markdown)
 (use-package x-go)
 (use-package x-web-mode)
-(use-package x-kubernetes)
 
+;; (use-package x-kubernetes)
 
 ;; (use-package cb-auto-save)
 ;; (use-package cb-server)

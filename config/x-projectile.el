@@ -92,7 +92,7 @@
 
 (use-package counsel-projectile
   :defer t
-  :commands (counsel-projectile-on
+  :commands (counsel-projectile-mode
              counsel-projectile-find-file
              counsel-projectile-find-dir
              counsel-projectile-switch-project
@@ -108,7 +108,7 @@
     "/"  #'counsel-projectile-rg)
 
   :config
-  (counsel-projectile-on))
+  (counsel-projectile-mode))
 
 (provide 'x-projectile)
 

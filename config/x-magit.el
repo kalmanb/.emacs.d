@@ -42,10 +42,10 @@ Press [_b_] again to blame further in the history, [_q_] to go up or quit."
     (evil-define-key 'normal magit-refs-mode-map (kbd ".") #'magit-branch-and-checkout)
     (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1)))
 
-(use-package magithub
-  :after magit
-  :config
-  (setq magithub-features '((t . t))))
+;; (use-package magithub
+;;   :after magit
+;;   :config
+;;   (setq magithub-features '((t . t))))
 
 (use-package git-commit-jira-prefix
   :after git-commit

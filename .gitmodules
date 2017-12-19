@@ -166,3 +166,15 @@
 [submodule "lisp/popup-el"]
 	path = lisp/popup-el
 	url = https://github.com/auto-complete/popup-el.git
+[submodule "lisp/prettier-emacs"]
+	path = lisp/prettier-emacs
+	url = https://github.com/prettier/prettier-emacs.git
+[submodule "lisp/flycheck-package"]
+	path = lisp/flycheck-package
+	url = https://github.com/purcell/flycheck-package.git
+[submodule "lisp/package-lint"]
+	path = lisp/package-lint
+	url = https://github.com/purcell/package-lint.git
+[submodule "lisp/expanderr"]
+	path = lisp/expanderr
+	url = https://github.com/stapelberg/expanderr.git
