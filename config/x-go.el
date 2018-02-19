@@ -131,17 +131,22 @@
   (spacemacs-keys-declare-prefix-for-mode 'go-mode "mr" "rename")
   (spacemacs-keys-set-leader-keys-for-major-mode 'go-mode "rn" 'go-rename))
 
-(use-package x-gometallinter)
-
 (use-package flycheck-gometalinter
-  :after x-go
+  :after go-mode
   :defer t
   :init
-  (add-hook 'go-mode-hook #'x-go--enable-gometalinter t)
+  ;; (add-hook 'go-mode-hook #'x-go--enable-gometalinter t)
   :config
   (progn
+    (flycheck-gometalinter-setup)
     (setq flycheck-gometalinter-vendor t)
-    (setq flycheck-gometalinter-fast t)))
+    (setq flycheck-gometalinter-fast t)
+    (setq flycheck-disabled-checkers '(go-gofmt
+                                       go-golint
+                                       go-vet
+                                       go-build
+                                       go-test
+                                       go-errcheck))))
 
 ;; Not working
 (use-package go-guru
