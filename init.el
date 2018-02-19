@@ -78,7 +78,6 @@ If argument INTERACTIVE-P is set, log additional information."
 (defconst use-package-verbose t)
 (require 'use-package)
 
-
 ;; Load features
 (use-package x-emacs)
 (use-package x-darwin :if (equal system-type 'darwin))
