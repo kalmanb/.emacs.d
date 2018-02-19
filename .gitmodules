@@ -178,3 +178,9 @@
 [submodule "lisp/expanderr"]
 	path = lisp/expanderr
 	url = https://github.com/stapelberg/expanderr.git
+[submodule "lisp/magit-popup"]
+	path = lisp/magit-popup
+	url = https://github.com/magit/magit-popup
+[submodule "lisp/ghub"]
+	path = lisp/ghub
+	url = https://github.com/magit/ghub
