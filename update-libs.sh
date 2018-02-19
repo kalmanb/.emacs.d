@@ -6,7 +6,7 @@
 rm -rf elpa
 
 ## Prettier
-wget https://raw.githubusercontent.com/prettier/prettier-emacs/master/prettier-js.el -O lisp/prettier-js/prettier-js.el
+wget https://raw.githubusercontent.com/prettier/prettier-emacs/master/prettier-js.el -O lisp/prettier-emacs/prettier-js.el
 
 
 # Submodules
