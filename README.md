@@ -47,3 +47,9 @@ flow-typed
 
 
 spacemas keys major mode leadent
+
+# Install
+## OSX
+
+    brew install emacs-plus --without-spacemacs-icon --devel
+    brew link
